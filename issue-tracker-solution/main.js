@@ -30,8 +30,9 @@ const closeIssue = id => {
 }
 
 const deleteIssue = id => {
+  console.log(id)
   const issues = JSON.parse(localStorage.getItem('issues'));
-  const remainingIssues = issues.filter( issue.id !== id )
+  const remainingIssues = issues.filter(issues => issues.id !== id )
   localStorage.setItem('issues', JSON.stringify(remainingIssues));
 }
 
@@ -53,4 +54,9 @@ const fetchIssues = () => {
                               <a href="#" onclick="deleteIssue(${id})" class="btn btn-danger">Delete</a>
                               </div>`;
   }
+}
+
+
+const setStatusClosed=() => {
+  console.log('ok')
 }
