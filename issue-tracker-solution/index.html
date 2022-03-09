@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Issue Tracker: </title>
+
+    <style>
+      .des{
+        display:none;
+        color:red;
+      }
+    </style>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
@@ -17,6 +24,7 @@
           <div class="form-group">
             <label for="issueDescription">Description</label>
             <input type="text" class="form-control" id="issueDescription" placeholder="Describe the issue ...">
+            <p id="describe" class="fs-3 text-center des">Please put describe value !!!!!</p>
           </div>
           <div class="form-group">
             <label for="issueSeverity">Severity</label>
@@ -24,13 +32,12 @@
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
               <option value="High">High</option>
-            </select>
-
-            
+            </select>               
           </div>
           <div class="form-group">
             <label for="issueAssignedTo">Assigned To</label>
             <input type="text" class="form-control" id="issueAssignedTo" placeholder="Enter responsible ...">
+            <p id="responsible" class="fs-3 text-center des">Please put responsible value !!!!!</p>
           </div>
           <button type="submit" class="btn btn-primary">Add</button>
         </form>
