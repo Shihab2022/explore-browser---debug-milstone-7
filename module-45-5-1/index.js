@@ -1,16 +1,16 @@
-const mybutton1 =() =>{
+const  submit=()=>{
+const getData =document.getElementById('get-value')
+const getValue=getData.value
+let pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+if(pattern.test(getValue)){
+    document.getElementById('success').style.display='block'
+    document.getElementById('error').style.display='none'
 
-    console.log('buuton 1 is clicked')
 }
-const mybutton2 =() =>{
 
-    console.log('buuton 2 is clicked')
+else{
+    document.getElementById('error').style.display='block'
+    document.getElementById('success').style.display='none'
 }
-const mybutton3 =() =>{
-
-    console.log('buuton 3 is clicked')
-}
-const mybutton4 =() =>{
-
-    console.log('buuton 4 is clicked')
+ 
 }
