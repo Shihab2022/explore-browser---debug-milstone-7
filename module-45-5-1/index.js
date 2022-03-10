@@ -12,5 +12,6 @@ else{
     document.getElementById('error').style.display='block'
     document.getElementById('success').style.display='none'
 }
+getData.value=''
  
 }
