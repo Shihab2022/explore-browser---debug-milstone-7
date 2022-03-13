@@ -3,6 +3,7 @@ let imgIndex =0;
 const imageSlider =document.getElementById('image-slider')
 setInterval(()=>{
 
+    
 if(imgIndex >= images.length){
     imgIndex=0
 }
